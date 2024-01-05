@@ -1,0 +1,256 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Darker text color for better readability */
+    background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Container for better layout control */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #ff66b2; /* Vibrant pink for header */
+    border-bottom: 1px solid #e60073; /* Darker pink border */
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+header .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #ff66b2; /* Vibrant pink navigation */
+    border-bottom: 1px solid #e60073; /* Darker pink border */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ff99cc; /* Lighter pink on hover */
+}
+
+/* Service Grid styling */
+.service-grid {
+    background-color: #ffc0cb; /* Light pink background */
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.service {
+    border: 1px solid #ff99cc; /* Lighter pink border */
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #fff; /* White background for service */
+    color: #333;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* About Us styling */
+.about {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ff99cc; /* Lighter pink for About Us section */
+}
+
+/* Welcome styling */
+.-blog {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Price List styling */
+.price-list {
+    background-color: #ff99cc; /* Lighter pink background */
+    border-bottom: 1px solid #e60073; /* Darker pink border */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.price-table th,
+.price-table td {
+    border: 1px solid #e60073; /* Darker pink border */
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.price-table th:hover,
+.price-table td:hover {
+    background-color: #f5f5f5;
+}
+
+/* Updated Nails styling */
+.price-table td:nth-child(3):before,
+.price-table td:nth-child(4):before {
+    content: " - ";
+}
+
+.price-table td:nth-child(3):empty:before,
+.price-table td:nth-child(4):empty:before {
+    content: "";
+}
+
+/* Appointment styling */
+.appointment {
+    background-color: #ff99cc; /* Lighter pink background */
+    padding: 50px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff66b2; /* Vibrant pink background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff99cc; /* Lighter pink on hover */
+}
+
+/* Gallery styling */
+.gallery {
+    background-color: #ff99cc; /* Lighter pink background */
+    padding: 50px 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.image-grid img:hover {
+    opacity: 0.8;
+}
+
+/* Contact styling */
+.contact {
+    background-color: #ff99cc; /* Lighter pink background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons img {
+    max-width: 40px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff66b2; /* Vibrant pink background */
+    border-top: 1px solid #e60073; /* Darker pink border */
+    color: #606060;
+    padding: 20px 0;
+}
+/* Larger screens */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 70%; /* Adjust width for larger screens */
+    }
+
+    /* Add more styles as needed for larger screens */
+}
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    /* Add more styles as needed for smaller screens */
+}
